@@ -1,0 +1,23 @@
+.carousel-item img{
+    height: 75vh;
+    width: 100%;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.gallery .card-img-top{
+  height: 250px;
+  object-fit: cover;
+}
+.logo-img{
+  height: 100px;
+  width: 100%;
+  object-fit: contain;
+  padding: 8px;
+  background: #fff;
+}
+
