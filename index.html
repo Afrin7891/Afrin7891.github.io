@@ -52,6 +52,9 @@
           <a class="nav-link active" aria-current="page" href="#project1">Project</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#resume1">Resume</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#gallery1">Gallery</a>
         </li>
         <li class="nav-item">
@@ -282,7 +285,7 @@
     <p>Afrin</p>
   </div>
 <div class="accordion" id="accordionExample">
-  <div class="accordion-item">
+  <div class="accordion-item" id="technical">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
         Programming Languages
@@ -306,7 +309,7 @@
       </div>
     </div>
   </div>
-  <div class="accordion-item">
+  <div class="accordion-item" id="soft">
     <h2 class="accordion-header" id="headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
         Soft Skills
@@ -326,7 +329,7 @@
       </div>
     </div>
   </div>
-  <div class="accordion-item">
+  <div class="accordion-item" id="cocurricular">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
         Co-Curricular Activities
@@ -376,6 +379,32 @@
 </div>
 
 </div>
+</section>
+
+<section class="resume my-5" id="resume1">
+  <div class="container text-center ">
+    <h1 data-aos="fade-up" data-aos-offset="300">Resume</h1>
+    <hr class="w-25 m-auto">
+    <p>Afrin</p>
+  </div>
+
+  <div class="row pt-5">
+    <div class="col-12 col-md-8 mx-auto" data-aos="fade-up" data-aos-offset="200">
+
+      <div class="card h-100 w-100">
+        <div class="card-body text-center">
+          <h5 class="card-title">My Resume</h5>
+          <p class="card-text">Download or preview my complete resume below.</p>
+          <a href="resume.pdf" class="btn btn-primary m-2" download>Download Resume</a>
+          <a href="resume.pdf" class="btn btn-outline-primary m-2" target="_blank">View Resume</a>
+        </div>
+
+        <!-- Inline preview (optional) -->
+        <embed src="resume.pdf" type="application/pdf" width="100%" height="500px">
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <section class="gallery my-5" id="gallery1">
@@ -478,6 +507,11 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+  document.getElementById('navbarDropdown').addEventListener('click', function () {
+    document.getElementById('skills1').scrollIntoView({ behavior: 'smooth' });
+  });
 </script>
 
 
