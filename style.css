@@ -13,6 +13,15 @@ h1 {
   height: 250px;
   object-fit: cover;
 }
+.skill-card{
+  border-radius: 12px;
+  border: 1px solid #eee;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.skill-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
 .logo-img{
   height: 100px;
   width: 100%;
